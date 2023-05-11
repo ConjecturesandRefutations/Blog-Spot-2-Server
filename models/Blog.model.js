@@ -4,9 +4,8 @@ const { Schema, model } = mongoose;
 const blogSchema = new Schema({
   title: String,
   date: String,
+  content: String,
   imgUrl: { type: String, default: "../images/quill.jpg" },
-  isVegetarian: Boolean,
-  isVegan: Boolean,
 });
 
 module.exports = model("Blog", blogSchema);
